@@ -1,0 +1,13 @@
+# Module 06 examples — FIFO in the datapath
+
+Track A (UART RTL / TB literacy). Browser lab may still be planned.
+
+## Prompts
+
+1. Restate the core idea of **FIFO in the datapath** in one sentence.
+2. Draw or tabulate one worked example (frame bits, baud math, FIFO pointers, …).
+3. Optional: peek at [`../learn_uart_spi_i2c/`](../learn_uart_spi_i2c/) for a UART RTL/TB sketch.
+
+## Stretch
+
+When the browser lab ships, redo the same idea with the starter challenges.

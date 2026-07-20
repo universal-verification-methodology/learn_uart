@@ -1,0 +1,12 @@
+# Module 11 outline
+title: "TB vs UVM map"
+kind: lab
+lab: tb-vs-uvm-map
+slides:
+  - Course context / why UART matters in chip bring-up
+  - Core idea (1 concept)
+  - Track B: show lab starter if shipped (else diagram)
+  - Track A: paper / tiny .v cue
+  - Common pitfalls
+  - Your turn + quiz prompt
+duration_minutes: 8

@@ -1,0 +1,12 @@
+# Module 05 outline
+title: "UART errors"
+kind: lab
+lab: uart-errors
+slides:
+  - Course context / why UART matters in chip bring-up
+  - Core idea (1 concept)
+  - Track B: show lab starter if shipped (else diagram)
+  - Track A: paper / tiny .v cue
+  - Common pitfalls
+  - Your turn + quiz prompt
+duration_minutes: 8
