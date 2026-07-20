@@ -9,17 +9,27 @@
 - Describe a UART frame (start / data / parity / stop) and common error cases
 - Map a UART spec into an RTL checklist and baud / oversample timing ideas
 - Place FIFO + valid/ready handshake in a UART datapath story
-- Point at TB / waves / VIP map next steps (even if some browser labs are still shipping)
+- Point at TB / waves / VIP map literacy from the shipped browser labs
 
 ## Dual-track recap
 
-If you mainly used **shipped browser labs** (FIFO / handshake / waves), sketch a UART frame on paper and revisit planned modules when they ship.  
-If you mainly used **Track A**, open the shipped labs for visual challenges.
+If you mainly used **browser labs**, sketch a UART frame on paper and revisit any modules you skipped on Track A.  
+If you mainly used **Track A**, open the browser labs for visual challenges on baud, oversampling, waves, TB versus UVM map, and VIP anatomy.
 
 ## Next courses
 
 → **learn_spi** · **learn_i2c** · **learn_uvm2017** · **learn_verification_planning_management**  
 Syllabus ladder: [../../syllabus.md](../../syllabus.md#suggested-learning-ladder)
+
+## Media
+
+| Artifact | Path |
+|----------|------|
+| Transcript | [transcript.md](transcript.md) |
+| Outline | [outline.yaml](outline.yaml) |
+| Slides | [slides.pptx](slides.pptx) · [slides.pdf](slides.pdf) |
+| Video | [video.mp4](video.mp4) |
+| Quiz | [quiz.json](quiz.json) |
 
 ## Checklist
 

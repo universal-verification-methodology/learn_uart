@@ -1,0 +1,13 @@
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module01-uart-frame/frames/slide-1.png'
+duration 27.672
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module01-uart-frame/frames/slide-2.png'
+duration 31.2
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module01-uart-frame/frames/slide-3.png'
+duration 24.648
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module01-uart-frame/frames/slide-4.png'
+duration 23.496
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module01-uart-frame/frames/slide-5.png'
+duration 27.336
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module01-uart-frame/frames/slide-6.png'
+duration 20.64
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module01-uart-frame/frames/slide-6.png'

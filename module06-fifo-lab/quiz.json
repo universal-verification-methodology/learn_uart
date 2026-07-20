@@ -1,0 +1,53 @@
+{
+  "module": "module06-fifo-lab",
+  "title": "FIFO in the datapath check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "FIFO means…",
+      "choices": [
+        "First-In First-Out — oldest entry is read next",
+        "First-In Last-Out (a stack)",
+        "random access like RAM",
+        "only a clock generator"
+      ],
+      "answer": 0,
+      "explain": "Queue order, not stack."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Starter depth-4: after one push of 0xA5, count and wr are…",
+      "choices": [
+        "count=1, wr=1, rd=0",
+        "count=0, wr=0, rd=1",
+        "full=1 immediately",
+        "wr=4, rd=4"
+      ],
+      "answer": 0,
+      "explain": "One entry, wr advanced."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Full is true when…",
+      "choices": [
+        "count == DEPTH",
+        "count == 0",
+        "wr == rd only",
+        "mem is all zeros"
+      ],
+      "answer": 0,
+      "explain": "All slots occupied."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "Pushing while full should be blocked or raise overflow in a real design.",
+      "answer": true,
+      "explain": "Backpressure on full."
+    }
+  ]
+}

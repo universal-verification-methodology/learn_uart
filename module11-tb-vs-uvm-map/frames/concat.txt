@@ -1,0 +1,13 @@
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module11-tb-vs-uvm-map/frames/slide-1.png'
+duration 43.008
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module11-tb-vs-uvm-map/frames/slide-2.png'
+duration 55.704
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module11-tb-vs-uvm-map/frames/slide-3.png'
+duration 45.456
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module11-tb-vs-uvm-map/frames/slide-4.png'
+duration 38.904
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module11-tb-vs-uvm-map/frames/slide-5.png'
+duration 35.928
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module11-tb-vs-uvm-map/frames/slide-6.png'
+duration 23.448
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module11-tb-vs-uvm-map/frames/slide-6.png'

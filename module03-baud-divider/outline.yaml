@@ -1,12 +1,81 @@
-# Module 03 outline
-title: "Baud / divider"
-kind: lab
-lab: baud-divider
+title: Baud divider
+footer: learn_uart — baud divider
 slides:
-  - Course context / why UART matters in chip bring-up
-  - Core idea (1 concept)
-  - Track B: show lab starter if shipped (else diagram)
-  - Track A: paper / tiny .v cue
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: Baud divider
+  subtitle: Your system clock runs much faster than the UART bit rate
+  notes: Your system clock runs much faster than the UART bit rate. A baud divider
+    turns sysclk into a slower enable. The integer formula is DIV approximately round
+    of f_sys divided by baud. A counter runs zero through DIV minus one each sysclk.
+    When it hits DIV minus one, you wrap to zero and fire a one-cycle baud_tick pulse.
+    That pulse tells the TX or RX FSM to advance one bit time—not a fifty-percent
+    duty clock on the wire.
+- type: bullets
+  title: Starter DIV equals four
+  bullets:
+  - 'Starter preset: DIV equals four in baud_tick pulse mode, sixteen sysclk cycles
+    shown'
+  - Count zero, one, two, three, then baud_tick equals one on the wrap at cnt equals
+    three
+  - In sixteen cycles you see four ticks
+  - Step once to watch cnt advance, or play to end for the full pattern
+  - Compare with toggle mode
+  notes: 'Starter preset: DIV equals four in baud_tick pulse mode, sixteen sysclk
+    cycles shown. Count zero, one, two, three—then baud_tick equals one on the wrap
+    at cnt equals three, and the counter returns to zero. In sixteen cycles you see
+    four ticks. Step once to watch cnt advance, or play to end for the full pattern.
+    Compare with toggle mode: clk_div flips every DIV clocks, so one output period
+    is about two times DIV sysclks—SPI-style, not UART enable.'
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Baud divider starter
+  notes: In the browser lab, load the starter example and read the four idea cards—DIV,
+    baud_tick, clk_div, and oversampling OS. The wave table and SVG trace show cnt
+    and the output pulse. Try Calc DIV for fifty megahertz and one-one-five-two-zero-zero
+    baud—expect four-thirty-four. Switch OS to sixteen times and calc again for the
+    sample-clock divider. Demo DIV equals four and Explain summarize pulse versus
+    toggle in one click.
+- type: bullets
+  title: Real RTL/TB practice
+  bullets:
+  - In Track A, restate the divider formula in one sentence
+  - Draw a counter from zero to DIV minus one and mark where baud_tick goes high for
+    one cycle
+  - Contrast that with a toggling clk_div output
+  - 'Optional: peek at UART RTL examples in the legacy combined materials and name
+    where a'
+  - This lab is divider literacy, not a full UART yet
+  notes: 'In Track A, restate the divider formula in one sentence. Draw a counter
+    from zero to DIV minus one and mark where baud_tick goes high for one cycle. Contrast
+    that with a toggling clk_div output. Optional: peek at UART RTL examples in the
+    legacy combined materials and name where a baud_tick would feed the bit FSM. This
+    lab is divider literacy—not a full UART yet.'
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Do not confuse baud_tick with the serial line, it is an internal enable, one sysclk
+    wide
+  - Toggle mode is not UART bit timing; its period is two times DIV, not DIV
+  - Integer division truncates, real designs pick f_sys and baud so the error stays
+    acceptable
+  - With oversampling
+  - And remember
+  notes: 'Do not confuse baud_tick with the serial line—it is an internal enable,
+    one sysclk wide. Toggle mode is not UART bit timing; its period is two times DIV,
+    not DIV. Integer division truncates—real designs pick f_sys and baud so the error
+    stays acceptable. With oversampling, divide by baud times OS, not baud alone—that
+    preview matters in the next module. And remember: the sketch panel shows concept
+    Verilog; synthesis still needs reset and clock-domain hygiene.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, load starter DIV four pulse, step to a baud_tick at cnt three
+  - On paper, draw the counter wrap and one tick pulse
+  - When you are ready, take the short quiz, then continue to oversampling
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    load starter DIV four pulse, step to a baud_tick at cnt three, and calc DIV for
+    fifty megahertz at one-one-five-two-zero-zero. On paper, draw the counter wrap
+    and one tick pulse. When you are ready, take the short quiz, then continue to
+    oversampling.

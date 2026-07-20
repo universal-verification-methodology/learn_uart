@@ -1,0 +1,53 @@
+{
+  "module": "module04-uart-oversample",
+  "title": "Oversampling check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "16× oversampling means…",
+      "choices": [
+        "the sample clock runs 16 times the baud rate (16 ticks per bit)",
+        "there are 16 stop bits",
+        "TX toggles 16 times per start bit only",
+        "the FIFO depth is 16"
+      ],
+      "answer": 0,
+      "explain": "Sixteen sample clocks per bit cell."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Starter 16× clean cell: mid sample is at tick…",
+      "choices": [
+        "8",
+        "0",
+        "15",
+        "16"
+      ],
+      "answer": 0,
+      "explain": "OS/2 = 16/2 = 8."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "We sample near mid-bit mainly to…",
+      "choices": [
+        "avoid settling / jitter near the bit edges",
+        "maximize EMI",
+        "skip the start bit forever",
+        "force MSB-first order"
+      ],
+      "answer": 0,
+      "explain": "Center of cell is safest."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "After a falling start edge at 16×, a common step is wait about OS/2 clocks then confirm RX is still 0.",
+      "answer": true,
+      "explain": "Start-bit center hunt."
+    }
+  ]
+}

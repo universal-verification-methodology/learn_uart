@@ -1,0 +1,53 @@
+{
+  "module": "module01-uart-frame",
+  "title": "UART frame check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "Between UART frames the TX line typically sits at…",
+      "choices": [
+        "logic 1 (idle / mark)",
+        "logic 0 always",
+        "high-Z only",
+        "toggling every baud"
+      ],
+      "answer": 0,
+      "explain": "Idle-high is the UART default."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Starter byte 0xA5 as 8N1 means…",
+      "choices": [
+        "8 data bits, no parity, 1 stop bit",
+        "8 stop bits, no data, 1 parity",
+        "8N baud, 1 wire",
+        "A5 start bits only"
+      ],
+      "answer": 0,
+      "explain": "Standard shorthand: data/parity/stop."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Classic UART data order on the wire is…",
+      "choices": [
+        "LSB first",
+        "MSB first always",
+        "random per frame",
+        "nibble-swapped only"
+      ],
+      "answer": 0,
+      "explain": "D0 is the least significant bit."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "The UART start bit is one bit-time of 0 after idle-high.",
+      "answer": true,
+      "explain": "Start marks the frame edge."
+    }
+  ]
+}

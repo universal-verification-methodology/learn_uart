@@ -1,0 +1,53 @@
+{
+  "module": "module13-wrap",
+  "title": "UART complete check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "This wrap module mainly…",
+      "choices": [
+        "Recaps what you can do and points to the next courses",
+        "Introduces a brand-new browser lab",
+        "Replaces Track A forever",
+        "Teaches full verification planning depth"
+      ],
+      "answer": 0,
+      "explain": "Wrap modules summarize outcomes and link the syllabus next step."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "After this course you should be able to…",
+      "choices": [
+        "Describe a UART frame and common error cases like framing and overrun",
+        "Synthesize a full chip netlist from the browser labs alone",
+        "Skip all testbench concepts permanently",
+        "Replace Accellera UVM with inline $display only"
+      ],
+      "answer": 0,
+      "explain": "Core UART literacy from the course outcomes."
+    },
+    {
+      "id": "q3",
+      "type": "true_false",
+      "prompt": "Deep verification planning depth lives in course 14, not in learn_uart.",
+      "answer": true,
+      "explain": "Planning is learn_verification_planning_management."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "If you mostly used browser labs, a good next step is…",
+      "choices": [
+        "Sketch a UART frame on paper and revisit skipped Track A modules",
+        "Never open a simulator or editor again",
+        "Assume VIP anatomy labs replace self-checking RTL",
+        "Skip SPI and I²C entirely"
+      ],
+      "answer": 0,
+      "explain": "Close Track A gaps before the next protocol course."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "module": "module00-intro",
+  "title": "Welcome to UART check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "The learn_uart course arc is…",
+      "choices": [
+        "spec → RTL → TB → waves → VIP map",
+        "Only UVM scoreboards",
+        "Only Git branching",
+        "Synthesis and place-and-route only"
+      ],
+      "answer": 0,
+      "explain": "Protocol literacy before VIP depth."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Track A in learn_uart means…",
+      "choices": [
+        "Real RTL/TB with Verilog and optional simulators",
+        "Browser labs only forever",
+        "Writing verification plans only",
+        "No Verilog allowed"
+      ],
+      "answer": 0,
+      "explain": "Track A is paper plus small UART DUT/TB you keep."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Track B is mainly for…",
+      "choices": [
+        "Browser labs (frame, baud, FIFO, waves, …)",
+        "Installing Vivado",
+        "Replacing all RTL work",
+        "Deep verification planning"
+      ],
+      "answer": 0,
+      "explain": "Track B builds timing intuition in the browser."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "Deep verification planning belongs in learn_verification_planning_management, not this UART course.",
+      "answer": true,
+      "explain": "UART course stays spec/RTL/TB/VIP literacy."
+    }
+  ]
+}

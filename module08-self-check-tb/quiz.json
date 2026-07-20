@@ -1,0 +1,53 @@
+{
+  "module": "module08-self-check-tb",
+  "title": "Self-check TB check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A self-checking TB’s main job is…",
+      "choices": [
+        "compare DUT outputs to an expected value and report pass/fail",
+        "only dump VCD for manual review",
+        "synthesize the DUT",
+        "replace Accellera UVM"
+      ],
+      "answer": 0,
+      "explain": "Automated expect vs got."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Starter and2: a=1, b=1, expect=1 gives…",
+      "choices": [
+        "PASS (y=1 matches expect)",
+        "FAIL always",
+        "no compare step",
+        "synthesis error"
+      ],
+      "answer": 0,
+      "explain": "1 AND 1 = 1."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "The expected value should come from…",
+      "choices": [
+        "a golden/reference model — not blindly from the DUT itself",
+        "only the previous $display string",
+        "the SDF annotation file",
+        "place-and-route congestion"
+      ],
+      "answer": 0,
+      "explain": "Independent golden."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "When got !== expect, a typical TB calls $error and tallies a failure.",
+      "answer": true,
+      "explain": "Explicit fail path."
+    }
+  ]
+}

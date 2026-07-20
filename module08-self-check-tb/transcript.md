@@ -1,23 +1,31 @@
-# Module 08 transcript — Self-check TB
+# Module 08 — Self-check TB
 
-> Stub for voiceover / clip. Expand when recording (module-slides).
+**Module id:** module08-self-check-tb  
+**Lab:** self-check-tb  
+**Tracks:** A (real RTL/TB) · B (browser lab)
 
-## Hook
+## Slide 1 — Self-checking testbench
 
-UART shows up everywhere in bring-up and debug. This module: **Self-check TB**.
+A useful testbench does not stop at dumping waves for eyeball review. It drives stimulus, samples the DUT output, compares against an expected value, and reports pass or fail. The expected value comes from a golden reference model—independent of the DUT netlist, not copied blindly from the output you are trying to verify. When got does not equal expect, call dollar-error or tally a failure. When they match, dollar-display pass. That pattern scales from a tiny and-gate to a UART byte check later in the course.
 
-## Teach
+## Slide 2 — Starter and2 PASS
 
-(3–5 sentences on the concept.)
+Starter preset: and2 DUT with a equals one, b equals one, expect y equals one—already checked PASS. The flow row reads stimulus, DUT, got, compare, PASS. The compare box shows y equals one matches expect one. History lists one passing vector. Try Run check again to refresh the TB sketch—it shows an initial block with if y not equal expect then dollar-error else dollar-display pass. Set expect to zero on the same stimulus and Run check again—you get FAIL and the error tally increments.
 
-## Show Track B
+## Slide 3 — Browser lab
 
-Open the browser lab, `self-check-tb`. Load the starter.
+![Self-check TB starter](assets/lab-starter.png)
 
-## Show Track A
+In the browser lab, load the starter example and read the four idea cards—stimulus, expect, compare, tally. Auto expect fills expect from the golden model for the current inputs. Switch DUT to add4 or mux2 and Load DUT to see wider stimulus fields. Sweep vectors runs all four and2 combinations with four passes and zero errors. Demo fail sets wrong expect on purpose so you can read the dollar-error path in the TB sketch. Explain summarizes why automated compare beats wave-only review.
 
-Sketch on paper or show a tiny Verilog fragment from EXAMPLES.md.
+## Slide 4 — Real RTL/TB practice
 
-## Your turn
+In Track A, write the five-step self-check loop in order: stimulus, golden expect, sample got, compare, tally. Sketch dollar-error versus dollar-display for one UART-style byte check—even on paper. Optional: peek at a UART testbench in the legacy combined materials and name where expect would come from. This lab uses tiny DUTs; the discipline is the same for full serial VIP later.
 
-Complete the checklist for at least one track. Then take the short quiz.
+## Slide 5 — Pitfalls to watch
+
+Do not set expect by reading the DUT output you are testing—that circular check always passes. Waves help debug but are not the pass criterion—automate the compare. One passing vector is not coverage—sweep or add directed cases like the and2 four-vector sweep. Wrong expect on purpose is good practice—you must see FAIL paths in sim logs. And remember: this is pre-UVM literacy; UVM scoreboards reuse the same expect-versus-got idea with more structure.
+
+## Slide 6 — Your turn
+
+Complete the checklist for at least one track—preferably both. In the browser, load starter and2 PASS, run wrong expect once for FAIL, then Sweep vectors for four passes. On paper, write the compare line for got not equal expect. When you are ready, take the short quiz, then continue to TB clock and reset.

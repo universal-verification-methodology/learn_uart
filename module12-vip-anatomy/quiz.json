@@ -1,0 +1,59 @@
+{
+  "module": "module12-vip-anatomy",
+  "title": "VIP anatomy check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A verification IP (VIP) package is mainly…",
+      "choices": [
+        "a reusable agent + checker + coverage + docs handoff",
+        "only a Makefile PHONY target",
+        "a replacement for the DUT",
+        "just +UVM_TESTNAME"
+      ],
+      "answer": 0,
+      "explain": "Four deliverables for consumer handoff."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Inside a VIP, the agent’s job is to…",
+      "choices": [
+        "drive / observe one protocol interface",
+        "synthesize the RTL netlist",
+        "replace coverage bins",
+        "own the chip foundry flow"
+      ],
+      "answer": 0,
+      "explain": "One bus: sqr + drv + mon + if."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "A VIP protocol checker typically…",
+      "choices": [
+        "flags bus-rule / handshake violations (usually passively)",
+        "must write DUT registers every cycle",
+        "deletes the scoreboard",
+        "sets the synthesis top"
+      ],
+      "answer": 0,
+      "explain": "Legality watch, not payload SB."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "Docs in a VIP handoff usually include…",
+      "choices": [
+        "API notes, README/examples, and a self-test path",
+        "only a blank waveform window",
+        "foundry PDK files",
+        "timescale pragmas alone"
+      ],
+      "answer": 0,
+      "explain": "Consumer can integrate and self-test."
+    }
+  ]
+}

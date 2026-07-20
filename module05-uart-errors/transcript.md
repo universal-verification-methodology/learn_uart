@@ -1,23 +1,31 @@
-# Module 05 transcript — UART errors
+# Module 05 — UART errors
 
-> Stub for voiceover / clip. Expand when recording (module-slides).
+**Module id:** module05-uart-errors  
+**Lab:** uart-errors  
+**Tracks:** A (real RTL/TB) · B (browser lab)
 
-## Hook
+## Slide 1 — UART error flags
 
-UART shows up everywhere in bring-up and debug. This module: **UART errors**.
+A real UART RX does not just deliver bytes—it reports when something went wrong. Three classic flags: framing, parity, and overrun. Framing means the sampled stop bit was not one—noise, baud mismatch, or a break held low too long. Parity means the check bit does not match the even or odd rule over the data bits. Overrun means a new frame finished while software still has not read the holding register—the prior byte is lost. This lab walks those three cases on one frame at a time.
 
-## Teach
+## Slide 2 — Starter clean A5 eight-E-one
 
-(3–5 sentences on the concept.)
+Starter preset: clean frame hex A5 with eight data bits, even parity, one stop bit—eight-E-one. All three flags start at zero. Byte A5 has four ones in its eight bits, so the expected even parity bit Pe is zero. Step bit through idle, start, D0 through D7, Pe, stop, and trailing idle. Play to end and the verdict should read RX OK with flags clear. The RHR panel shows the latched byte unread until you click Read RHR.
 
-## Show Track B
+## Slide 3 — Browser lab
 
-Open the browser lab, `uart-errors`. Load the starter.
+![UART errors starter](assets/lab-starter.png)
 
-## Show Track A
+In the browser lab, load the starter example and read the three idea cards—framing, parity, overrun. Switch the scenario dropdown to inject errors: Framing stop equals zero highlights a bad stop slot. Parity bad Pe flips the check bit while stop stays good. Overrun delivers a second byte hex five-A before you read—play to end without Read RHR and overrun fires. Demo clean walks a full good frame. Explain summarizes all three flags in one trace line.
 
-Sketch on paper or show a tiny Verilog fragment from EXAMPLES.md.
+## Slide 4 — Real RTL/TB practice
 
-## Your turn
+In Track A, name the three UART RX status flags and what each one means in one line. For hex A5 eight-E-one, compute the expected even parity bit. Sketch what software should do when framing is set versus parity only. Optional: peek at UART status-register examples in the legacy combined materials. This lab is error literacy—your TB should still inject and check these flags explicitly.
 
-Complete the checklist for at least one track. Then take the short quiz.
+## Slide 5 — Pitfalls to watch
+
+Framing and parity are sampled at the end of the frame—do not confuse them with start-bit detection from the last module. A parity error can still latch data into RHR; framing often means the byte is suspect. Overrun is a software-timing problem—read the holding register before the next byte arrives, or add a FIFO in the next module. A line held low longer than a frame looks like repeated framing errors or break, not overrun alone. And remember: this lab uses preset corrupted frames; real noise needs oversampling and filters you already studied.
+
+## Slide 6 — Your turn
+
+Complete the checklist for at least one track—preferably both. In the browser, play clean A5 eight-E-one with all flags zero, then try framing and overrun presets once each. On paper, list framing, parity, and overrun and one cause for each. When you are ready, take the short quiz, then continue to FIFO in the datapath.

@@ -25,23 +25,26 @@ Legacy combined path: [`../learn_uart_spi_i2c/`](../learn_uart_spi_i2c/). Siblin
 ## Setup (Track B)
 
 1. Serve the platform: `python -m http.server 8080 --directory platform` (from monorepo root).
-2. Open http://127.0.0.1:8080/tools/index.html — shipped starters: [`fifo-lab`](http://127.0.0.1:8080/tools/fifo-lab/index.html), [`handshake`](http://127.0.0.1:8080/tools/handshake/index.html), [`waveform-lab`](http://127.0.0.1:8080/tools/waveform-lab/index.html).
-3. UART-specific labs may still show Coming soon — use Track A sketches until they ship.
+2. Open http://127.0.0.1:8080/tools/index.html — all **12** UART course labs are shipped (frame through VIP anatomy).
+3. Live mirror: [learning/tools](https://universal-verification-methodology.github.io/learning/tools/).
 
 ## How to move through modules
 
 1. Read the module **README** (outcomes).
-2. Prefer Track A when a browser lab is still planned.
+2. Pick Track A, Track B, or both—every lab module has a shipped browser lab.
 3. Check off **CHECKLIST.md**.
 4. Optional: skim `outline.yaml` / `transcript.md` for upcoming slides & clips.
 
-## Media (planned)
+## Media
 
 | Artifact | Path |
 |----------|------|
+| Transcript | [transcript.md](transcript.md) |
 | Outline | [outline.yaml](outline.yaml) |
-| Transcript stub | [transcript.md](transcript.md) |
-| Slides / video | generate later with **module-slides** |
+| Slides | [slides.pptx](slides.pptx) · [slides.pdf](slides.pdf) |
+| Video | [video.mp4](video.mp4) |
+| Quiz | [quiz.json](quiz.json) |
+
 
 ## Next
 

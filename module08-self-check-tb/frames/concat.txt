@@ -1,0 +1,13 @@
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module08-self-check-tb/frames/slide-1.png'
+duration 34.776
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module08-self-check-tb/frames/slide-2.png'
+duration 36.528
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module08-self-check-tb/frames/slide-3.png'
+duration 35.04
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module08-self-check-tb/frames/slide-4.png'
+duration 27.72
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module08-self-check-tb/frames/slide-5.png'
+duration 31.32
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module08-self-check-tb/frames/slide-6.png'
+duration 22.368
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module08-self-check-tb/frames/slide-6.png'

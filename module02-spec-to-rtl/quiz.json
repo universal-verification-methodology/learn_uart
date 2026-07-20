@@ -1,0 +1,53 @@
+{
+  "module": "module02-spec-to-rtl",
+  "title": "Spec → RTL checklist check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A sensible spec→RTL order is…",
+      "choices": [
+        "Ports → parameters → blocks → skeleton stub",
+        "FSM first, ports never",
+        "Only testbench, no module",
+        "Synthesis before any spec"
+      ],
+      "answer": 0,
+      "explain": "Structure before bit-level logic."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Starter UART TX has these already checked…",
+      "choices": [
+        "clk/rst ports, bus ports, BAUD_DIV parameter",
+        "Full FSM implementation",
+        "Complete VIP scoreboard",
+        "SPI mode 3 only"
+      ],
+      "answer": 0,
+      "explain": "Three starter checks; blocks still pending."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Required UART blocks in this lab include…",
+      "choices": [
+        "baud_gen, shifter, byte FSM",
+        "Only a parity tree",
+        "PCIe enumeration",
+        "UVM RAL only"
+      ],
+      "answer": 0,
+      "explain": "Generator + serializer + FSM."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "Generate skeleton produces a stub module with TODO—not finished RTL.",
+      "answer": true,
+      "explain": "Planning literacy tool."
+    }
+  ]
+}

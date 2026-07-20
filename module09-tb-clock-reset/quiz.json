@@ -1,0 +1,53 @@
+{
+  "module": "module09-tb-clock-reset",
+  "title": "TB clock / reset check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A typical TB clock is generated with…",
+      "choices": [
+        "a forever toggle (or equivalent) in the testbench",
+        "only the DUT's clock-gating cell",
+        "$finish inside the clock block",
+        "randomize() on clk each ns"
+      ],
+      "answer": 0,
+      "explain": "Free-running TB clock."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Starter classic: assert_posedges equals…",
+      "choices": [
+        "2 (two posedges with rst_n=0)",
+        "0 (no assert)",
+        "6 (every half-cycle)",
+        "4 always"
+      ],
+      "answer": 0,
+      "explain": "Two cycles in reset."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Active-low reset assert means…",
+      "choices": [
+        "drive rst_n = 0 for a chosen number of cycles",
+        "drive rst_n = 1 forever",
+        "delete the clock",
+        "call $fatal immediately"
+      ],
+      "answer": 0,
+      "explain": "rst_n low = in reset."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "Starter classic release at h4 is sync-style (not async mid).",
+      "answer": true,
+      "explain": "Deassert after posedge edge."
+    }
+  ]
+}

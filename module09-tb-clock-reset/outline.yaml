@@ -1,12 +1,82 @@
-# Module 09 outline
-title: "TB clock / reset"
-kind: lab
-lab: tb-clock-reset
+title: TB clock and reset
+footer: learn_uart — tb clock reset
 slides:
-  - Course context / why UART matters in chip bring-up
-  - Core idea (1 concept)
-  - Track B: show lab starter if shipped (else diagram)
-  - Track A: paper / tiny .v cue
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: TB clock and reset
+  subtitle: Every RTL testbench needs a clock and a reset before stimulus runs
+  notes: Every RTL testbench needs a clock and a reset before stimulus runs. The TB
+    clock is a free-running forever toggle—it is not a DUT output. Active-low reset
+    means assert by driving rst_n to zero for a chosen number of posedge cycles, then
+    deassert back to one. Sync-style release aligns deassert with the clock so flops
+    sample cleanly. Async release changes rst_n between edges—legal in real designs,
+    but you should know the hazard. This lab reads half-cycle waves and a TB sketch
+    side by side.
+- type: bullets
+  title: Starter classic assert times two
+  bullets:
+  - 'Starter preset: classic assert times two, sync release'
+  - Free-running clk toggles every half-cycle
+  - Rst_n stays low through two posedges
+  - Cursor starts at h4, the release point
+  - Click Analyze and the flags show assert_posedges equals two
+  - The TB sketch shows repeat two at posedge clk, then rst_n equals one
+  notes: 'Starter preset: classic assert times two, sync release. Free-running clk
+    toggles every half-cycle. rst_n stays low through two posedges—at half-cycles
+    one and three—then rises at half-cycle four while clk is high after the second
+    edge. Cursor starts at h4, the release point. Click Analyze and the flags show
+    assert_posedges equals two, released equals one, release equals sync. The TB sketch
+    shows repeat two at posedge clk, then rst_n equals one. That is the bring-up pattern
+    you will reuse before UART byte checks.'
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: TB clock reset starter
+  notes: In the browser lab, load the starter example and read the four idea cards—forever
+    clk, assert, sync release, async release. The timeline marks posedges with an
+    arrow on clk rows. Try async mid release—rst_n rises at h2 between edges. Hold
+    forever keeps rst_n at zero with the clock still toggling. Idle preset has rst_n
+    all ones with no assert phase. Long times four shows repeat four in the sketch.
+    Demo async and Explain summarize sync versus mid-cycle release.
+- type: bullets
+  title: Real RTL/TB practice
+  bullets:
+  - In Track A, write a minimal initial block
+  - State why sync deassert is preferred for flops clocked on posedge clk
+  - 'Optional: peek at a UART TB in the legacy combined materials and name where reset
+    ends'
+  - This lab is literacy, not a full simulator or metastability proof
+  notes: 'In Track A, write a minimal initial block: clk toggle forever, rst_n assert
+    for two posedges, then deassert. State why sync deassert is preferred for flops
+    clocked on posedge clk. Optional: peek at a UART TB in the legacy combined materials
+    and name where reset ends before the first byte drive. This lab is literacy—not
+    a full simulator or metastability proof.'
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Do not confuse TB clock generation with the UART baud divider, they serve different
+    roles
+  - Assert means rst_n equals zero, not one
+  - Counting reset cycles means posedges while rst_n is low, not arbitrary half-cycles
+  - Releasing reset mid-cycle can work but is not the same as sync release at the
+    edge
+  - Hold forever means the DUT never leaves reset, useful to see the wave, not a passing
+    test
+  - And remember
+  notes: 'Do not confuse TB clock generation with the UART baud divider—they serve
+    different roles. Assert means rst_n equals zero, not one. Counting reset cycles
+    means posedges while rst_n is low, not arbitrary half-cycles. Releasing reset
+    mid-cycle can work but is not the same as sync release at the edge. Hold forever
+    means the DUT never leaves reset—useful to see the wave, not a passing test. And
+    remember: real chips may need async assert with sync deassert; this lab shows
+    the teaching patterns only.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser
+  - On paper, sketch clk and rst_n for two cycles in reset and one cycle out
+  - When you are ready, take the short quiz, then continue to waves
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    load starter classic, Analyze for two assert posedges and sync release, then try
+    async mid once. On paper, sketch clk and rst_n for two cycles in reset and one
+    cycle out. When you are ready, take the short quiz, then continue to waves.

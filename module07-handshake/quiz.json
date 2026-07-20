@@ -1,0 +1,53 @@
+{
+  "module": "module07-handshake",
+  "title": "Handshake check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "In valid/ready handshake, a beat transfers when…",
+      "choices": [
+        "valid and ready are both 1 in the same cycle",
+        "only valid is 1",
+        "only ready is 1",
+        "the clock stops"
+      ],
+      "answer": 0,
+      "explain": "fire = valid && ready."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Starter “Both assert”: transferred data on cycle 0 is…",
+      "choices": [
+        "0xA5",
+        "0x00 always",
+        "the stop bit",
+        "undefined until FIFO full"
+      ],
+      "answer": 0,
+      "explain": "One beat at cycle 0."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "If valid=1 but ready=0…",
+      "choices": [
+        "no transfer — sink backpressures; source typically holds data/valid",
+        "the beat is lost forever",
+        "ready becomes don’t-care",
+        "valid must fall immediately always"
+      ],
+      "answer": 0,
+      "explain": "Backpressure stall."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "Transfer / fire is often written as fire = valid && ready.",
+      "answer": true,
+      "explain": "Boolean AND on handshake."
+    }
+  ]
+}

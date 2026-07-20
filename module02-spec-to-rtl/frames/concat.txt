@@ -1,0 +1,13 @@
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module02-spec-to-rtl/frames/slide-1.png'
+duration 26.616
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module02-spec-to-rtl/frames/slide-2.png'
+duration 30.36
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module02-spec-to-rtl/frames/slide-3.png'
+duration 27.336
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module02-spec-to-rtl/frames/slide-4.png'
+duration 21.384
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module02-spec-to-rtl/frames/slide-5.png'
+duration 24.528
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module02-spec-to-rtl/frames/slide-6.png'
+duration 20.568
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module02-spec-to-rtl/frames/slide-6.png'

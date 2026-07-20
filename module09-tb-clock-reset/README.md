@@ -25,13 +25,16 @@ After this module you can explain and practice the ideas taught by **`tb-clock-r
 
 > Concept labs are literacy tools — they do not replace a synthesizable UART + self-checking TB.
 
-## Media (planned)
+## Media
 
 | Artifact | Path |
 |----------|------|
+| Transcript | [transcript.md](transcript.md) |
 | Outline | [outline.yaml](outline.yaml) |
-| Transcript stub | [transcript.md](transcript.md) |
-| Slides / video | generate later with **module-slides** |
+| Slides | [slides.pptx](slides.pptx) · [slides.pdf](slides.pdf) |
+| Video | [video.mp4](video.mp4) |
+| Quiz | [quiz.json](quiz.json) |
+
 
 ## Files
 

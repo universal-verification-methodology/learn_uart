@@ -1,0 +1,13 @@
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module10-waveform-lab/frames/slide-1.png'
+duration 40.128
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module10-waveform-lab/frames/slide-2.png'
+duration 35.712
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module10-waveform-lab/frames/slide-3.png'
+duration 37.44
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module10-waveform-lab/frames/slide-4.png'
+duration 25.032
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module10-waveform-lab/frames/slide-5.png'
+duration 28.704
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module10-waveform-lab/frames/slide-6.png'
+duration 24.504
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module10-waveform-lab/frames/slide-6.png'

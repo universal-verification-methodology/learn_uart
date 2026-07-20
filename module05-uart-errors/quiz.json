@@ -1,0 +1,53 @@
+{
+  "module": "module05-uart-errors",
+  "title": "UART errors check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A framing error usually means…",
+      "choices": [
+        "the sampled stop bit was not 1",
+        "the start bit was 1",
+        "parity matched",
+        "the FIFO was empty"
+      ],
+      "answer": 0,
+      "explain": "Stop must return to idle high."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Starter clean 0xA5 8E1: expected even parity Pe is…",
+      "choices": [
+        "0 (four 1s in the data byte)",
+        "1 always",
+        "the stop bit",
+        "undefined without FIFO"
+      ],
+      "answer": 0,
+      "explain": "Even parity: total 1s including Pe is even."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Overrun happens when…",
+      "choices": [
+        "a new byte completes before software reads the previous holding register",
+        "stop is always 0",
+        "TX is idle",
+        "parity is disabled"
+      ],
+      "answer": 0,
+      "explain": "SW must drain RHR in time."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "Parity preset can set parity=1 while framing stays 0.",
+      "answer": true,
+      "explain": "Bad check bit, good stop."
+    }
+  ]
+}

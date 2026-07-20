@@ -1,12 +1,72 @@
-# Module 00 outline
-title: "Welcome to UART"
-kind: intro
-lab: null
+title: Welcome to UART
+footer: learn_uart — intro
 slides:
-  - Course context / why UART matters in chip bring-up
-  - Core idea (1 concept)
-  - Track B: show lab starter if shipped (else diagram)
-  - Track A: paper / tiny .v cue
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: Welcome to UART
+  subtitle: UART shows up everywhere in bring-up and debug
+  notes: UART shows up everywhere in bring-up and debug—a serial line on a board,
+    a console on a chip, a quick link between blocks. This short clip welcomes you
+    to learn UART and shows how the course is meant to be used.
+- type: bullets
+  title: What you’ll build toward
+  bullets:
+  - Across the course you follow one protocol arc
+  - Finally TB versus UVM layering
+  - Deep verification planning is a different course, here you build UART literacy
+    first
+  notes: 'Across the course you follow one protocol arc: read the spec, sketch RTL,
+    build a self-checking testbench, read waves, then map the same ideas to a VIP-style
+    view. You’ll walk frame timing, baud and oversampling, error cases, FIFO and handshake
+    in the datapath, and finally TB versus UVM layering. Deep verification planning
+    is a different course—here you build UART literacy first.'
+- type: bullets
+  title: Two tracks, one idea
+  bullets:
+  - Every lab module offers two ways to practice
+  - Track A is real RTL and testbench work
+  - Track B uses interactive labs on the learning platform for frame timing, baud
+    math
+  - You may do either track, or both
+  - A good rhythm is browser first for the idea, then a short RTL sketch to harden
+    it
+  notes: Every lab module offers two ways to practice. Track A is real RTL and testbench
+    work—small Verilog sketches with optional Icarus, Verilator, or the browser HDL
+    simulator. Track B uses interactive labs on the learning platform for frame timing,
+    baud math, and wave intuition. You may do either track, or both. A good rhythm
+    is browser first for the idea, then a short RTL sketch to harden it.
+- type: bullets
+  title: Set up Track A
+  bullets:
+  - Open an editor for Verilog or SystemVerilog files
+  - 'Optional: install Icarus or Verilator, or use the public HDL simulator for quick
+    runs'
+  - Stretch examples live in the older combined UART-SPI-I²C materials
+  - From this course folder, open module READMEs and EXAMPLES prompts as you go
+  notes: 'Open an editor for Verilog or SystemVerilog files. Optional: install Icarus
+    or Verilator, or use the public HDL simulator for quick runs. Stretch examples
+    live in the older combined UART-SPI-I²C materials—they are optional, not required.
+    From this course folder, open module READMEs and EXAMPLES prompts as you go; self-check
+    scripts can grade checklist items when you want them.'
+- type: two_column
+  title: Set up Track B
+  left:
+  - From the monorepo
+  - Waveform viewer
+  - If you prefer, use the published tools site instead
+  - Confirm you can reach the index, the next module sends you into the UART frame
+    lab
+  right: assets/tools-index.png
+  notes: From the monorepo, serve the platform folder with a simple local web server,
+    then open the tools index in your browser. All twelve course labs are shipped—UART
+    frame through VIP anatomy—alongside shared labs like FIFO, handshake, and waveform
+    viewer. If you prefer, use the published tools site instead. Either way, confirm
+    you can reach the index—the next module sends you into the UART frame lab.
+- type: bullets
+  title: How to move through modules
+  bullets:
+  - For each module
+  - When you finish this intro checklist, continue to UART frame, where idle, start,
+    data
+  notes: For each module, read the README for the outcome, pick a track—or both—then
+    work the checklist. When you finish this intro checklist, continue to UART frame,
+    where idle, start, data, and stop bits become a timeline you can read and sketch.

@@ -1,23 +1,31 @@
-# Module 10 transcript — Waves
+# Module 10 — Waves
 
-> Stub for voiceover / clip. Expand when recording (module-slides).
+**Module id:** module10-waveform-lab  
+**Lab:** waveform-lab  
+**Tracks:** A (real RTL/TB) · B (browser lab)
 
-## Hook
+## Slide 1 — Reading waves
 
-UART shows up everywhere in bring-up and debug. This module: **Waves**.
+Waveforms plot each watched signal’s value over simulation time—not a substitute for self-check compares, but essential for debug. Signal names match the elaborated design: clk, d, q. Click the plot to set a cursor and read every visible signal at that instant. A rising clock edge is where clk goes zero to one—often where flip-flops sample. Multi-bit buses show value labels when bits change. X or Z means unknown or high-impedance, not a clean zero or one. This lab runs small in-browser waves from the HDL engine—not a full GTKWave or huge VCD workflow.
 
-## Teach
+## Slide 2 — Starter D flip-flop
 
-(3–5 sentences on the concept.)
+Starter preset: D flip-flop with a forever hash-five clock—ten time units per full period, five high and five low. Watch clk, d, and q. Poke D equals one, then click posedge clk. q rises on the wave at the clock edge, not when d alone toggles mid-cycle—that is nonblocking update behavior. Before the edge you can poke D equals one while q still reads zero. Click inside the wave panel to move the cursor and confirm q at the cursor time. Uncheck d in the watch list to hide that row without deleting the net.
 
-## Show Track B
+## Slide 3 — Browser lab
 
-Open the browser lab, `waveform-lab` (or note Coming soon and show a diagram).
+![Waveform lab starter](assets/lab-starter.png)
 
-## Show Track A
+In the browser lab, load the starter example and read the source panel—the always at posedge block. Step advances simulation time; posedge clk jumps to the next rising edge. Try Register plus enable: with EN zero, q stays flat across edges. Counter shows a four-bit bus ribbon counting up. Two-stage pipeline makes q2 lag q1 by one clock—visible as offset transitions on the wave. Reset session clears time and edges. Challenges ask you to capture q equals one, set a cursor, and read values at the cursor.
 
-Sketch on paper or show a tiny Verilog fragment from EXAMPLES.md.
+## Slide 4 — Real RTL/TB practice
 
-## Your turn
+In Track A, sketch clk, d, and q for one posedge where D was one before the edge. Write why q updates at the edge, not when d changes alone. Optional: after a UART sim, open a VCD in your viewer and name three signals you would watch first. This lab teaches wave literacy—the same signals reappear when you debug serial TX or RX later.
 
-Complete the checklist for at least one track. Then take the short quiz.
+## Slide 5 — Pitfalls to watch
+
+Do not treat eyeballing the wave as the pass criterion—that was module eight’s self-check job. Do not assume q follows d instantly—posedge sampling and NBA timing matter. A flat q with enable off is correct, not a broken sim. Bus labels are binary or hex—read width before comparing. And remember: this browser engine is a teaching subset; huge traces still belong in GTKWave or your simulator’s viewer offline.
+
+## Slide 6 — Your turn
+
+Complete the checklist for at least one track—preferably both. In the browser, load D-FF starter, poke D equals one, posedge clk until q equals one, and click the wave to read q at the cursor. On paper, draw one clk period and mark where q would update. When you are ready, take the short quiz, then continue to TB versus UVM map.

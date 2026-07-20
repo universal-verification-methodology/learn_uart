@@ -1,0 +1,53 @@
+{
+  "module": "module03-baud-divider",
+  "title": "Baud / divider check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "A common integer baud divider is…",
+      "choices": [
+        "DIV ≈ round(f_sys / baud)",
+        "DIV = baud / f_sys always",
+        "DIV must be a power of two only",
+        "DIV is the UART stop-bit count"
+      ],
+      "answer": 0,
+      "explain": "System clock divided by bit rate."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "In pulse mode, baud_tick is typically…",
+      "choices": [
+        "a 1-cycle enable every DIV sysclks",
+        "a 50% duty clock at baud rate",
+        "CS for SPI",
+        "always high"
+      ],
+      "answer": 0,
+      "explain": "One-cycle strobe on wrap."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Starter DIV=4 pulse: baud_tick fires when…",
+      "choices": [
+        "cnt == 3, then wrap to 0",
+        "cnt == 4 always",
+        "every sysclk",
+        "only on reset"
+      ],
+      "answer": 0,
+      "explain": "Wrap at DIV−1."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "Toggling clk_div every DIV sysclks gives output period about 2·DIV sysclk periods.",
+      "answer": true,
+      "explain": "Two half-periods per toggle."
+    }
+  ]
+}

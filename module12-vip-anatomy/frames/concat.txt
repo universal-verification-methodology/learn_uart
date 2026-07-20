@@ -1,0 +1,13 @@
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module12-vip-anatomy/frames/slide-1.png'
+duration 47.376
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module12-vip-anatomy/frames/slide-2.png'
+duration 45.84
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module12-vip-anatomy/frames/slide-3.png'
+duration 46.056
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module12-vip-anatomy/frames/slide-4.png'
+duration 39.408
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module12-vip-anatomy/frames/slide-5.png'
+duration 36.696
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module12-vip-anatomy/frames/slide-6.png'
+duration 22.824
+file '/mnt/d/proj/designs/learning/courses/learn_uart/module12-vip-anatomy/frames/slide-6.png'

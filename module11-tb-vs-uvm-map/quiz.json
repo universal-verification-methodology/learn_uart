@@ -1,0 +1,59 @@
+{
+  "module": "module11-tb-vs-uvm-map",
+  "title": "TB vs UVM map check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "This lab’s main idea is to…",
+      "choices": [
+        "map classic pin TB roles onto UVM components",
+        "compile Accellera UVM in the browser",
+        "synthesize a UART VIP",
+        "replace all $display with SVA"
+      ],
+      "answer": 0,
+      "explain": "Literacy map, not a UVM library."
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "prompt": "Classic pin wiggles map most closely to…",
+      "choices": [
+        "driver + virtual interface",
+        "scoreboard only",
+        "RAL model only",
+        "covergroup only"
+      ],
+      "answer": 0,
+      "explain": "Driver drives pins via vif."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Hard-coded vector lists become…",
+      "choices": [
+        "sequences feeding a sequencer",
+        "only $finish",
+        "synthesis constraints",
+        "place-and-route scripts"
+      ],
+      "answer": 0,
+      "explain": "Stimulus intent moves to sequences."
+    },
+    {
+      "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "A $display peek of bus wires maps to…",
+      "choices": [
+        "a monitor publishing via analysis ports",
+        "the factory alone",
+        "objections only",
+        "plusargs only"
+      ],
+      "answer": 0,
+      "explain": "Passive observe → monitor + TLM."
+    }
+  ]
+}

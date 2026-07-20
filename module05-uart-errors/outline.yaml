@@ -1,12 +1,81 @@
-# Module 05 outline
-title: "UART errors"
-kind: lab
-lab: uart-errors
+title: UART error flags
+footer: learn_uart — uart errors
 slides:
-  - Course context / why UART matters in chip bring-up
-  - Core idea (1 concept)
-  - Track B: show lab starter if shipped (else diagram)
-  - Track A: paper / tiny .v cue
-  - Common pitfalls
-  - Your turn + quiz prompt
-duration_minutes: 8
+- type: title
+  title: UART error flags
+  subtitle: A real UART RX does not just deliver bytes, it reports when something
+    went wrong
+  notes: 'A real UART RX does not just deliver bytes—it reports when something went
+    wrong. Three classic flags: framing, parity, and overrun. Framing means the sampled
+    stop bit was not one—noise, baud mismatch, or a break held low too long. Parity
+    means the check bit does not match the even or odd rule over the data bits. Overrun
+    means a new frame finished while software still has not read the holding register—the
+    prior byte is lost. This lab walks those three cases on one frame at a time.'
+- type: bullets
+  title: Starter clean A5 eight-E-one
+  bullets:
+  - Starter preset
+  - All three flags start at zero
+  - Byte A5 has four ones in its eight bits, so the expected even parity bit Pe is
+    zero
+  - Step bit through idle, start, D0 through D7, Pe, stop, and trailing idle
+  - Play to end and the verdict should read RX OK with flags clear
+  - The RHR panel shows the latched byte unread until you click Read RHR
+  notes: 'Starter preset: clean frame hex A5 with eight data bits, even parity, one
+    stop bit—eight-E-one. All three flags start at zero. Byte A5 has four ones in
+    its eight bits, so the expected even parity bit Pe is zero. Step bit through idle,
+    start, D0 through D7, Pe, stop, and trailing idle. Play to end and the verdict
+    should read RX OK with flags clear. The RHR panel shows the latched byte unread
+    until you click Read RHR.'
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: UART errors starter
+  notes: 'In the browser lab, load the starter example and read the three idea cards—framing,
+    parity, overrun. Switch the scenario dropdown to inject errors: Framing stop equals
+    zero highlights a bad stop slot. Parity bad Pe flips the check bit while stop
+    stays good. Overrun delivers a second byte hex five-A before you read—play to
+    end without Read RHR and overrun fires. Demo clean walks a full good frame. Explain
+    summarizes all three flags in one trace line.'
+- type: bullets
+  title: Real RTL/TB practice
+  bullets:
+  - In Track A, name the three UART RX status flags and what each one means in one
+    line
+  - For hex A5 eight-E-one, compute the expected even parity bit
+  - Sketch what software should do when framing is set versus parity only
+  - 'Optional: peek at UART status-register examples in the legacy combined materials'
+  - This lab is error literacy, your TB should still inject and check these flags
+    explicitly
+  notes: 'In Track A, name the three UART RX status flags and what each one means
+    in one line. For hex A5 eight-E-one, compute the expected even parity bit. Sketch
+    what software should do when framing is set versus parity only. Optional: peek
+    at UART status-register examples in the legacy combined materials. This lab is
+    error literacy—your TB should still inject and check these flags explicitly.'
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Framing and parity are sampled at the end of the frame
+  - A parity error can still latch data into RHR; framing often means the byte is
+    suspect
+  - Overrun is a software-timing problem
+  - A line held low longer than a frame looks like repeated framing errors or break
+  - And remember
+  notes: 'Framing and parity are sampled at the end of the frame—do not confuse them
+    with start-bit detection from the last module. A parity error can still latch
+    data into RHR; framing often means the byte is suspect. Overrun is a software-timing
+    problem—read the holding register before the next byte arrives, or add a FIFO
+    in the next module. A line held low longer than a frame looks like repeated framing
+    errors or break, not overrun alone. And remember: this lab uses preset corrupted
+    frames; real noise needs oversampling and filters you already studied.'
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser
+  - On paper, list framing, parity, and overrun and one cause for each
+  - When you are ready, take the short quiz, then continue to FIFO in the datapath
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    play clean A5 eight-E-one with all flags zero, then try framing and overrun presets
+    once each. On paper, list framing, parity, and overrun and one cause for each.
+    When you are ready, take the short quiz, then continue to FIFO in the datapath.
