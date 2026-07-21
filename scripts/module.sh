@@ -25,11 +25,11 @@ case "$ACTION" in
     else
       echo "[INFO] iverilog not on PATH (optional)"
     fi
-    LEGACY="$(cd "$ROOT/.." && pwd)/learn_uart_spi_i2c"
+    LEGACY="$(cd "$ROOT/.." && pwd)/learn_uart / learn_spi / learn_i2c (see LEGACY.md)"
     if [[ -d "$LEGACY" ]]; then
       echo "[OK] legacy course present: $LEGACY"
     else
-      echo "[INFO] legacy learn_uart_spi_i2c not checked out"
+      echo "[INFO] legacy learn_uart / learn_spi / learn_i2c (see LEGACY.md) not checked out"
     fi
     [[ -f "$MOD_DIR/EXAMPLES.md" ]] && echo "[OK] EXAMPLES.md"
     [[ -f "$MOD_DIR/CHECKLIST.md" ]] && echo "[OK] CHECKLIST.md"

@@ -6,7 +6,7 @@ Track A (UART RTL / TB literacy). Browser lab is shipped.
 
 1. Restate the core idea of **Spec → RTL checklist** in one sentence (ports → blocks → skeleton).
 2. From the UART TX spec, list ports, parameters, and three named blocks.
-3. Optional: peek at [`../learn_uart_spi_i2c/`](../learn_uart_spi_i2c/) for a UART RTL/TB sketch.
+3. Optional: peek at [`../LEGACY.md`](../LEGACY.md) (archive; prefer **learn_uart** / **learn_spi** / **learn_i2c**) for a UART RTL/TB sketch.
 
 ## Stretch
 

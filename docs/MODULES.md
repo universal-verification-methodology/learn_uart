@@ -21,4 +21,4 @@ Lab-driven syllabus (pass 3). Full product syllabus: [../../syllabus.md](../../s
 
 ## Dual tracks
 
-See [TWO_TRACKS.md](TWO_TRACKS.md). Legacy: [`../learn_uart_spi_i2c/`](../learn_uart_spi_i2c/).
+See [TWO_TRACKS.md](TWO_TRACKS.md). Legacy: [`../LEGACY.md`](../LEGACY.md) (archive; prefer **learn_uart** / **learn_spi** / **learn_i2c**).

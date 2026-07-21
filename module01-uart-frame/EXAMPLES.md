@@ -6,7 +6,7 @@ Track A (UART RTL / TB literacy). Browser lab **`uart-frame`** is shipped.
 
 1. Restate the core idea of **UART frame** in one sentence.
 2. Draw or tabulate one worked example (frame bits, baud math, FIFO pointers, …).
-3. Optional: peek at [`../learn_uart_spi_i2c/`](../learn_uart_spi_i2c/) for a UART RTL/TB sketch.
+3. Optional: peek at [`../LEGACY.md`](../LEGACY.md) (archive; prefer **learn_uart** / **learn_spi** / **learn_i2c**) for a UART RTL/TB sketch.
 
 ## Stretch
 
