@@ -28,7 +28,7 @@ On-chip streaming interfaces move one beat per cycle when source and sink agree
 ## Real RTL/TB practice
 - In Track A, write the fire equation and explain valid and ready in one sentence each
 - Sketch three cycles where valid is held high but ready is zero
-- Optional: peek at streaming or AXI-Stream examples in the legacy materials and name the
+- Optional: peek at streaming or AXI-Stream examples in this module’s examples and name the
 - This lab is interface literacy, not a full protocol VIP or UART line driver
 
 ---

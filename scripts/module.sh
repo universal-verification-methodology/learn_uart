@@ -25,12 +25,7 @@ case "$ACTION" in
     else
       echo "[INFO] iverilog not on PATH (optional)"
     fi
-    LEGACY="$(cd "$ROOT/.." && pwd)/learn_uart / learn_spi / learn_i2c (see LEGACY.md)"
-    if [[ -d "$LEGACY" ]]; then
-      echo "[OK] legacy course present: $LEGACY"
-    else
-      echo "[INFO] legacy learn_uart / learn_spi / learn_i2c (see LEGACY.md) not checked out"
-    fi
+    echo "[INFO] Track A uses this course’s examples/ (no external archive required)"
     [[ -f "$MOD_DIR/EXAMPLES.md" ]] && echo "[OK] EXAMPLES.md"
     [[ -f "$MOD_DIR/CHECKLIST.md" ]] && echo "[OK] CHECKLIST.md"
     ;;

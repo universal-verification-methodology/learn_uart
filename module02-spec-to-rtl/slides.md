@@ -26,7 +26,7 @@ Before you write bit-level logic, translate the spec into structure
 ## Real RTL/TB practice
 - In Track A, from the UART TX spec list every port name and one parameter
 - Name three blocks you would draw on paper before coding
-- Optional: compare your list to a UART sketch in the legacy combined materials
+- Optional: compare your list to a UART sketch in this module’s examples
 - Write one sentence on what belongs in the skeleton versus what belongs in the FSM
 
 ---

@@ -20,7 +20,7 @@ In the browser lab, load the starter example and read the three idea cards—fra
 
 ## Slide 4 — Real RTL/TB practice
 
-In Track A, name the three UART RX status flags and what each one means in one line. For hex A5 eight-E-one, compute the expected even parity bit. Sketch what software should do when framing is set versus parity only. Optional: peek at UART status-register examples in the legacy combined materials. This lab is error literacy—your TB should still inject and check these flags explicitly.
+In Track A, name the three UART RX status flags and what each one means in one line. For hex A5 eight-E-one, compute the expected even parity bit. Sketch what software should do when framing is set versus parity only. Optional: peek at UART status-register examples in this module’s examples. This lab is error literacy—your TB should still inject and check these flags explicitly.
 
 ## Slide 5 — Pitfalls to watch
 

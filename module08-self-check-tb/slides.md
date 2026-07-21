@@ -28,7 +28,7 @@ A useful testbench does not stop at dumping waves for eyeball review
 ## Real RTL/TB practice
 - In Track A, write the five-step self-check loop in order
 - Sketch dollar-error versus dollar-display for one UART-style byte check, even on paper
-- Optional: peek at a UART testbench in the legacy combined materials and name where expect
+- Optional: peek at a UART testbench in this module’s examples and name where expect
 - This lab uses tiny DUTs; the discipline is the same for full serial VIP later
 
 ---

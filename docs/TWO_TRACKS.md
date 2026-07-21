@@ -5,7 +5,7 @@
 Practice with paper + small Verilog UART sketches (optional iverilog / Verilator / HDL Simulator).
 
 - Prompts under each `moduleNN-*/EXAMPLES.md`
-- Optional examples in [`../LEGACY.md`](../LEGACY.md) (archive; prefer **learn_uart** / **learn_spi** / **learn_i2c**)
+- Optional examples in  (archive; prefer **learn_uart** / **learn_spi** / **learn_i2c**)
 - Self-check: `./scripts/module.sh NN --check`
 
 ## Track B — Browser lab

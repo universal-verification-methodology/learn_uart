@@ -20,7 +20,7 @@ In the browser lab, load the starter example and read the four idea cards—DIV,
 
 ## Slide 4 — Real RTL/TB practice
 
-In Track A, restate the divider formula in one sentence. Draw a counter from zero to DIV minus one and mark where baud_tick goes high for one cycle. Contrast that with a toggling clk_div output. Optional: peek at UART RTL examples in the legacy combined materials and name where a baud_tick would feed the bit FSM. This lab is divider literacy—not a full UART yet.
+In Track A, restate the divider formula in one sentence. Draw a counter from zero to DIV minus one and mark where baud_tick goes high for one cycle. Contrast that with a toggling clk_div output. Optional: peek at UART RTL examples in this module’s examples and name where a baud_tick would feed the bit FSM. This lab is divider literacy—not a full UART yet.
 
 ## Slide 5 — Pitfalls to watch
 

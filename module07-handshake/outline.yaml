@@ -46,13 +46,13 @@ slides:
   - In Track A, write the fire equation and explain valid and ready in one sentence
     each
   - Sketch three cycles where valid is held high but ready is zero
-  - 'Optional: peek at streaming or AXI-Stream examples in the legacy materials and
+  - 'Optional: peek at streaming or AXI-Stream examples in this module’s examples and
     name the'
   - This lab is interface literacy, not a full protocol VIP or UART line driver
   notes: 'In Track A, write the fire equation and explain valid and ready in one sentence
     each. Sketch three cycles where valid is held high but ready is zero, then ready
     rises—when does the beat transfer? Optional: peek at streaming or AXI-Stream examples
-    in the legacy materials and name the handshake signals. This lab is interface
+    in this module’s examples and name the handshake signals. This lab is interface
     literacy—not a full protocol VIP or UART line driver.'
 - type: bullets
   title: Pitfalls to watch

@@ -28,7 +28,7 @@ Your system clock runs much faster than the UART bit rate
 - In Track A, restate the divider formula in one sentence
 - Draw a counter from zero to DIV minus one and mark where baud_tick goes high for one cycle
 - Contrast that with a toggling clk_div output
-- Optional: peek at UART RTL examples in the legacy combined materials and name where a
+- Optional: peek at UART RTL examples in this module’s examples and name where a
 - This lab is divider literacy, not a full UART yet
 
 ---

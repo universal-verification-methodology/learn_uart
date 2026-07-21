@@ -29,7 +29,7 @@ UART bytes arrive asynchronously from the line rate while software reads when it
 - In Track A, restate FIFO in one sentence and why UART RX often needs one
 - Draw four slots with wr and rd pointers after one push of A5
 - Write the empty and full conditions using count and depth
-- Optional: peek at FIFO examples in the legacy combined materials and name where full would
+- Optional: peek at FIFO examples in this module’s examples and name where full would
 - This lab is pointer literacy
 
 ---

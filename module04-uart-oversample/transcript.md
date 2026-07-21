@@ -20,7 +20,7 @@ In the browser lab, load the starter example and read the three idea cards—N t
 
 ## Slide 4 — Real RTL/TB practice
 
-In Track A, restate oversampling in one sentence—how many sample clocks fit in one bit at sixteen times. Draw tick zero through fifteen for a zero bit and circle the mid sample. Write what Start-bit hunt does after idle goes to zero. Optional: peek at UART RX examples in the legacy combined materials and name where a sample strobe would fire. This lab is sampling literacy—not a full synchronizer or metastability treatment yet.
+In Track A, restate oversampling in one sentence—how many sample clocks fit in one bit at sixteen times. Draw tick zero through fifteen for a zero bit and circle the mid sample. Write what Start-bit hunt does after idle goes to zero. Optional: peek at UART RX examples in this module’s examples and name where a sample strobe would fire. This lab is sampling literacy—not a full synchronizer or metastability treatment yet.
 
 ## Slide 5 — Pitfalls to watch
 

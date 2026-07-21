@@ -20,7 +20,7 @@ In the browser lab, load the starter example and read the spec bullets on the le
 
 ## Slide 4 — Real RTL/TB practice
 
-In Track A, from the UART TX spec list every port name and one parameter. Name three blocks you would draw on paper before coding. Optional: compare your list to a UART sketch in the legacy combined materials. Write one sentence on what belongs in the skeleton versus what belongs in the FSM implementation.
+In Track A, from the UART TX spec list every port name and one parameter. Name three blocks you would draw on paper before coding. Optional: compare your list to a UART sketch in this module’s examples. Write one sentence on what belongs in the skeleton versus what belongs in the FSM implementation.
 
 ## Slide 5 — Pitfalls to watch
 

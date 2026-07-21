@@ -13,7 +13,7 @@ After this module you can explain and practice the ideas taught by **`uart-frame
 ### Track A — Real RTL/TB (hands-on)
 
 1. Open [EXAMPLES.md](EXAMPLES.md) and work the prompts (paper + optional `.v`).
-2. Complete [CHECKLIST.md](CHECKLIST.md); use [`../LEGACY.md`](../LEGACY.md) (archive; prefer **learn_uart** / **learn_spi** / **learn_i2c**) when helpful.
+2. Complete [CHECKLIST.md](CHECKLIST.md); use  (archive; prefer **learn_uart** / **learn_spi** / **learn_i2c**) when helpful.
 3. Optional self-check: `./scripts/module.sh 01 --check` (from course root).
 
 ### Track B — Browser lab (online)

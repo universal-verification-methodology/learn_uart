@@ -45,7 +45,6 @@ Videos and decks are optional per module. Generate with the **module-slides** sk
 ## Browse or clone
 
 - **Browser labs:** [https://universal-verification-methodology.github.io/learning/tools/](https://universal-verification-methodology.github.io/learning/tools/)
-- **Legacy:** [`learn_uart / learn_spi / learn_i2c (legacy archive ignored)`](https://github.com/universal-verification-methodology/learn_uart)
 - **Syllabus (parent):** [`syllabus.md` § learn_uart](https://github.com/universal-verification-methodology/learning/blob/main/syllabus.md#11-learn_uart)
 
 ```bash
@@ -83,7 +82,7 @@ Details: [docs/TWO_TRACKS.md](docs/TWO_TRACKS.md).
 
 | Track | Practice surface | Start here |
 |-------|------------------|------------|
-| **A — Real RTL/TB** | Paper + `.v` · [`../LEGACY.md`](../LEGACY.md) (archive; prefer **learn_uart** / **learn_spi** / **learn_i2c**) | [docs/TWO_TRACKS.md](docs/TWO_TRACKS.md) |
+| **A — Real RTL/TB** | Paper + `.v` (archive; prefer **learn_uart** / **learn_spi** / **learn_i2c**) | [docs/TWO_TRACKS.md](docs/TWO_TRACKS.md) |
 | **B — Browser lab** | Platform tools | [uart-frame](https://universal-verification-methodology.github.io/learning/tools/uart-frame/) · [spec-to-rtl](https://universal-verification-methodology.github.io/learning/tools/spec-to-rtl/) · [baud-divider](https://universal-verification-methodology.github.io/learning/tools/baud-divider/) · [uart-oversample](https://universal-verification-methodology.github.io/learning/tools/uart-oversample/) · [uart-errors](https://universal-verification-methodology.github.io/learning/tools/uart-errors/) · [fifo-lab](https://universal-verification-methodology.github.io/learning/tools/fifo-lab/) · [handshake](https://universal-verification-methodology.github.io/learning/tools/handshake/) · [waveform-lab](https://universal-verification-methodology.github.io/learning/tools/waveform-lab/) |
 
 Lab status snapshot: **12 shipped** · **0 planned** (see [docs/MODULES.md](docs/MODULES.md)).
@@ -111,10 +110,9 @@ Full status table: **[docs/MODULES.md](docs/MODULES.md)**. Clusters: 00 intro ·
 
 ## Browser labs
 
-**Shipped:** [uart-frame](https://universal-verification-methodology.github.io/learning/tools/uart-frame/) · [spec-to-rtl](https://universal-verification-methodology.github.io/learning/tools/spec-to-rtl/) · [baud-divider](https://universal-verification-methodology.github.io/learning/tools/baud-divider/) · [uart-oversample](https://universal-verification-methodology.github.io/learning/tools/uart-oversample/) · [uart-errors](https://universal-verification-methodology.github.io/learning/tools/uart-errors/) · [fifo-lab](https://universal-verification-methodology.github.io/learning/tools/fifo-lab/) · [handshake](https://universal-verification-methodology.github.io/learning/tools/handshake/) · [waveform-lab](https://universal-verification-methodology.github.io/learning/tools/waveform-lab/) · [tb-vs-uvm-map](https://universal-verification-methodology.github.io/learning/tools/tb-vs-uvm-map/) · [self-check-tb](https://universal-verification-methodology.github.io/learning/tools/self-check-tb/) · [tb-clock-reset](https://universal-verification-methodology.github.io/learning/tools/tb-clock-reset/) · [vip-anatomy](https://universal-verification-methodology.github.io/learning/tools/vip-anatomy/). Use Track A + [`../LEGACY.md`](../LEGACY.md) (archive; prefer **learn_uart** / **learn_spi** / **learn_i2c**) for offline fidelity.
+**Shipped:** [uart-frame](https://universal-verification-methodology.github.io/learning/tools/uart-frame/) · [spec-to-rtl](https://universal-verification-methodology.github.io/learning/tools/spec-to-rtl/) · [baud-divider](https://universal-verification-methodology.github.io/learning/tools/baud-divider/) · [uart-oversample](https://universal-verification-methodology.github.io/learning/tools/uart-oversample/) · [uart-errors](https://universal-verification-methodology.github.io/learning/tools/uart-errors/) · [fifo-lab](https://universal-verification-methodology.github.io/learning/tools/fifo-lab/) · [handshake](https://universal-verification-methodology.github.io/learning/tools/handshake/) · [waveform-lab](https://universal-verification-methodology.github.io/learning/tools/waveform-lab/) · [tb-vs-uvm-map](https://universal-verification-methodology.github.io/learning/tools/tb-vs-uvm-map/) · [self-check-tb](https://universal-verification-methodology.github.io/learning/tools/self-check-tb/) · [tb-clock-reset](https://universal-verification-methodology.github.io/learning/tools/tb-clock-reset/) · [vip-anatomy](https://universal-verification-methodology.github.io/learning/tools/vip-anatomy/). Use Track A +  (archive; prefer **learn_uart** / **learn_spi** / **learn_i2c**) for offline fidelity.
 
 ## License
 
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — see [`LICENSE`](LICENSE).
 
-Path split from [`learn_uart / learn_spi / learn_i2c (legacy archive ignored)`](https://github.com/universal-verification-methodology/learn_uart). Platform tools and the parent monorepo may carry additional notices.

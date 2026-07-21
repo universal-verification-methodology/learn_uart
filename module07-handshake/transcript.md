@@ -20,7 +20,7 @@ In the browser lab, load the starter example and read the rule box—fire equals
 
 ## Slide 4 — Real RTL/TB practice
 
-In Track A, write the fire equation and explain valid and ready in one sentence each. Sketch three cycles where valid is held high but ready is zero, then ready rises—when does the beat transfer? Optional: peek at streaming or AXI-Stream examples in the legacy materials and name the handshake signals. This lab is interface literacy—not a full protocol VIP or UART line driver.
+In Track A, write the fire equation and explain valid and ready in one sentence each. Sketch three cycles where valid is held high but ready is zero, then ready rises—when does the beat transfer? Optional: peek at streaming or AXI-Stream examples in this module’s examples and name the handshake signals. This lab is interface literacy—not a full protocol VIP or UART line driver.
 
 ## Slide 5 — Pitfalls to watch
 

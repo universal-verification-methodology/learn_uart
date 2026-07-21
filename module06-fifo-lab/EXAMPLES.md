@@ -6,7 +6,7 @@ Track A (UART RTL / TB literacy). Browser lab may still be planned.
 
 1. Restate the core idea of **FIFO in the datapath** in one sentence.
 2. Draw or tabulate one worked example (frame bits, baud math, FIFO pointers, …).
-3. Optional: peek at [`../LEGACY.md`](../LEGACY.md) (archive; prefer **learn_uart** / **learn_spi** / **learn_i2c**) for a UART RTL/TB sketch.
+3. Optional: peek at  (archive; prefer **learn_uart** / **learn_spi** / **learn_i2c**) for a UART RTL/TB sketch.
 
 ## Stretch
 

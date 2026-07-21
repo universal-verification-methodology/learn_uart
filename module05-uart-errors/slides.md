@@ -29,7 +29,7 @@ A real UART RX does not just deliver bytes, it reports when something went wrong
 - In Track A, name the three UART RX status flags and what each one means in one line
 - For hex A5 eight-E-one, compute the expected even parity bit
 - Sketch what software should do when framing is set versus parity only
-- Optional: peek at UART status-register examples in the legacy combined materials
+- Optional: peek at UART status-register examples in this module’s examples
 - This lab is error literacy, your TB should still inject and check these flags explicitly
 
 ---

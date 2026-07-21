@@ -29,7 +29,7 @@ UART RX cannot rely on one sample per bit, the line transitions are noisy and sl
 - In Track A, restate oversampling in one sentence, how many sample clocks fit in one bit at
 - Draw tick zero through fifteen for a zero bit and circle the mid sample
 - Write what Start-bit hunt does after idle goes to zero
-- Optional: peek at UART RX examples in the legacy combined materials and name where a
+- Optional: peek at UART RX examples in this module’s examples and name where a
 - This lab is sampling literacy, not a full synchronizer or metastability treatment yet
 
 ---

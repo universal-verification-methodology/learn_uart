@@ -20,7 +20,7 @@ In the browser lab, load the starter example and read the four idea cards—fore
 
 ## Slide 4 — Real RTL/TB practice
 
-In Track A, write a minimal initial block: clk toggle forever, rst_n assert for two posedges, then deassert. State why sync deassert is preferred for flops clocked on posedge clk. Optional: peek at a UART TB in the legacy combined materials and name where reset ends before the first byte drive. This lab is literacy—not a full simulator or metastability proof.
+In Track A, write a minimal initial block: clk toggle forever, rst_n assert for two posedges, then deassert. State why sync deassert is preferred for flops clocked on posedge clk. Optional: peek at a UART TB in this module’s examples and name where reset ends before the first byte drive. This lab is literacy—not a full simulator or metastability proof.
 
 ## Slide 5 — Pitfalls to watch
 

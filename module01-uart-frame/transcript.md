@@ -20,7 +20,7 @@ In the browser lab, load the starter example and watch the wave table and SVG tr
 
 ## Slide 4 — Real RTL/TB practice
 
-In Track A, sketch the same frame on paper: label idle, start, eight data bits LSB first, stop. Write what eight-N-one means in words. Optional: peek at UART examples in the legacy combined materials and name one signal you would drive in a TX state machine. This lab is frame literacy—not a full synthesizable UART yet.
+In Track A, sketch the same frame on paper: label idle, start, eight data bits LSB first, stop. Write what eight-N-one means in words. Optional: peek at UART examples in this module’s examples and name one signal you would drive in a TX state machine. This lab is frame literacy—not a full synthesizable UART yet.
 
 ## Slide 5 — Pitfalls to watch
 

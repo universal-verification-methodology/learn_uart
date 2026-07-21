@@ -20,7 +20,7 @@ In the browser lab, load the starter example and watch the flag row—empty, ful
 
 ## Slide 4 — Real RTL/TB practice
 
-In Track A, restate FIFO in one sentence and why UART RX often needs one. Draw four slots with wr and rd pointers after one push of A5. Write the empty and full conditions using count and depth. Optional: peek at FIFO examples in the legacy combined materials and name where full would backpressure a push. This lab is pointer literacy—async clock-domain FIFOs with Gray codes are a separate topic.
+In Track A, restate FIFO in one sentence and why UART RX often needs one. Draw four slots with wr and rd pointers after one push of A5. Write the empty and full conditions using count and depth. Optional: peek at FIFO examples in this module’s examples and name where full would backpressure a push. This lab is pointer literacy—async clock-domain FIFOs with Gray codes are a separate topic.
 
 ## Slide 5 — Pitfalls to watch
 

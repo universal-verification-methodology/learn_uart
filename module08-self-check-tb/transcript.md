@@ -20,7 +20,7 @@ In the browser lab, load the starter example and read the four idea cards—stim
 
 ## Slide 4 — Real RTL/TB practice
 
-In Track A, write the five-step self-check loop in order: stimulus, golden expect, sample got, compare, tally. Sketch dollar-error versus dollar-display for one UART-style byte check—even on paper. Optional: peek at a UART testbench in the legacy combined materials and name where expect would come from. This lab uses tiny DUTs; the discipline is the same for full serial VIP later.
+In Track A, write the five-step self-check loop in order: stimulus, golden expect, sample got, compare, tally. Sketch dollar-error versus dollar-display for one UART-style byte check—even on paper. Optional: peek at a UART testbench in this module’s examples and name where expect would come from. This lab uses tiny DUTs; the discipline is the same for full serial VIP later.
 
 ## Slide 5 — Pitfalls to watch
 

@@ -28,7 +28,7 @@ Every RTL testbench needs a clock and a reset before stimulus runs
 ## Real RTL/TB practice
 - In Track A, write a minimal initial block
 - State why sync deassert is preferred for flops clocked on posedge clk
-- Optional: peek at a UART TB in the legacy combined materials and name where reset ends
+- Optional: peek at a UART TB in this module’s examples and name where reset ends
 - This lab is literacy, not a full simulator or metastability proof
 
 ---

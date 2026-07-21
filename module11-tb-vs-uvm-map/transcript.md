@@ -20,7 +20,7 @@ In the browser lab, load the starter example and look at the two columns—class
 
 ## Slide 4 — Real RTL/TB practice
 
-In Track A, restate the core idea in one sentence: pins become transactions, and flat TB roles become agents. On paper, map these five classic pieces to UVM: pin wiggle, vector list, display peek, inline expect, and flat module tb. Optional: peek at an offline TB or UVM sketch in the linked legacy course and label driver, monitor, and scoreboard in a UART byte send. You do not need a simulator for this beat—the mapping is the skill. When you later read a real uart_agent, you should recognize which old TB habit each component replaced.
+In Track A, restate the core idea in one sentence: pins become transactions, and flat TB roles become agents. On paper, map these five classic pieces to UVM: pin wiggle, vector list, display peek, inline expect, and flat module tb. Optional: peek at an offline TB or UVM sketch in the linked in-course hello and label driver, monitor, and scoreboard in a UART byte send. You do not need a simulator for this beat—the mapping is the skill. When you later read a real uart_agent, you should recognize which old TB habit each component replaced.
 
 ## Slide 5 — Pitfalls to watch
 

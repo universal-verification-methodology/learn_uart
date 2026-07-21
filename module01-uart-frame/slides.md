@@ -27,7 +27,7 @@ Asynchronous serial UART sends one byte as a timed bit sequence, no shared clock
 ## Real RTL/TB practice
 - In Track A, sketch the same frame on paper
 - Write what eight-N-one means in words
-- Optional: peek at UART examples in the legacy combined materials and name one signal you
+- Optional: peek at UART examples in this module’s examples and name one signal you
 - This lab is frame literacy, not a full synthesizable UART yet
 
 ---
